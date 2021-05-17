@@ -1,6 +1,7 @@
+config-version: 2
 
 name: 'jaffle_shop'
-version: '0.1'
+version: '1.0.0'
 profile: 'jaffle_shop'
 config-version: 2
 
@@ -9,6 +10,9 @@ analysis-paths: ["analysis"]
 test-paths: ["tests"]
 data-paths: ["data"]
 macro-paths: ["macros"]
+
+seeds:
+  +schema: raw
 
 target-path: "target"
 clean-targets:
