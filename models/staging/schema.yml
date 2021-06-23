@@ -8,6 +8,7 @@ sources:
     tables:
       - name: raw_customers
       - name: raw_orders
+        max_loaded_at: order_date::timestamp
         loaded_at_field: order_date::timestamp
       - name: raw_payments
 
