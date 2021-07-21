@@ -1,5 +1,5 @@
 
-with package_installs as (
+with test_test_test as (
 
     select * from {{ ref('stg_customers') }}
 
