@@ -10,6 +10,16 @@ sources:
       - name: raw_orders
         max_loaded_at: order_date::timestamp
         loaded_at_field: order_date::timestamp
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: status
+            tests:
+              - accepted_values:
+                # Missing 'return_pending' - this test should fail.
+                values: ['placed', 'shipped', 'completed', 'returned']
       - name: raw_payments
 
 
@@ -49,7 +59,7 @@ exposures:
     type: dashboard
     maturity: medium
     url: https://github.com/ashnm/jaffle_shop
-    description: :D
+    description: Jaffle Shop orders.
 
     depends_on:
       - ref('stg_orders')
