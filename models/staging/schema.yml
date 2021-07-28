@@ -18,8 +18,7 @@ sources:
           - name: status
             tests:
               - accepted_values:
-                # Missing 'return_pending' - this test should fail.
-                values: ['placed', 'shipped', 'completed', 'returned']
+                  values: ['placed', 'shipped', 'completed', 'returned']
       - name: raw_payments
 
 
