@@ -15,10 +15,10 @@ sources:
             tests:
               - unique
               - not_null
-          - name: status
-            tests:
-              - accepted_values:
-                  values: ['placed', 'shipped', 'completed', 'returned']
+          # - name: status
+          #   tests:
+          #     - accepted_values:
+          #         values: ['placed', 'shipped', 'completed', 'returned']
       - name: raw_payments
 
 
