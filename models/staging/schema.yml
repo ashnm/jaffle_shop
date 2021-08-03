@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: raw
     freshness:
-      warn_after: {count: 1, period: day}
-      error_after: {count: 1000, period: day}
+      warn_after: {count: 1, period: min}
+      error_after: {count: 2, period: min}
     tables:
       - name: raw_customers
       - name: raw_orders
