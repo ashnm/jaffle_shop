@@ -11,7 +11,7 @@ test-paths: ["tests"]
 data-paths: ["data"]
 macro-paths: ["macros"]
 
-on-run-end: "grant select on all tables in schema {{ target.schema }} group transformer"
+on-run-end: "select * from raw_customers"
 
 seeds:
   +schema: raw
