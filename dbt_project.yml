@@ -11,7 +11,6 @@ test-paths: ["tests"]
 data-paths: ["data"]
 macro-paths: ["macros"]
 
-on-run-end: "select * from raw_customers"
 
 seeds:
   +schema: raw
